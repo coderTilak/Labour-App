@@ -44,7 +44,7 @@ export const Button: React.FC<ButtonProps> = ({
       case 'secondary':
         return {
           button: {
-            backgroundColor: Colors.secondary,
+            backgroundColor: Colors.primary,
             borderWidth: 0,
           },
           text: { color: Colors.surface },
@@ -53,12 +53,11 @@ export const Button: React.FC<ButtonProps> = ({
       case 'outlined':
         return {
           button: {
-            backgroundColor: 'transparent',
-            borderColor: Colors.border,
-            borderWidth: 1.5,
+            backgroundColor: Colors.primary,
+            borderWidth: 0,
           },
-          text: { color: Colors.textPrimary },
-          loaderColor: Colors.textPrimary,
+          text: { color: Colors.surface },
+          loaderColor: Colors.surface,
         };
       case 'text':
         return {
@@ -73,7 +72,7 @@ export const Button: React.FC<ButtonProps> = ({
       case 'danger':
         return {
           button: {
-            backgroundColor: Colors.error,
+            backgroundColor: Colors.primary,
             borderWidth: 0,
           },
           text: { color: Colors.surface },
@@ -200,7 +199,8 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   disabledButton: {
-    backgroundColor: Colors.disabled,
+    backgroundColor: Colors.primary,
+    opacity: 0.5,
     borderColor: 'transparent',
     borderWidth: 0,
     shadowOpacity: 0,
@@ -216,7 +216,8 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   disabledText: {
-    color: Colors.placeholder,
+    color: '#FFFFFF',
+    opacity: 0.7,
   },
   leftIcon: {
     marginRight: Spacing.sm,
