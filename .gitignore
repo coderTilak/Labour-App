@@ -1,0 +1,115 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Expo
+frontend/.expo/
+frontend/dist/
+frontend/web-build/
+frontend/expo-env.d.ts
+
+# Backend
+backend/dist/
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+backend/.env
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+frontend/ios
+frontend/android
+
+frontend/.env.local/
+frontend/.expo/
+backend/.env/
+backend/schema_updates.sql  
+backend/schema.sql
+backend/node_modules/
+web-admin/.env.local
+web-admin/node_modules/
+web-admin-2/.env.local
+web-admin-2/node_modules/   
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+web-admin/node_modules/
+webadmin-2/node_modules/
+
+# Local Environment / Credentials (VERY IMPORTANT)
+.env
+.env.local
+.env.*.local
+frontend/.env
+backend/.env
+web-admin/.env
+web-admin/.env.local
+webadmin-2/.env
+webadmin-2/.env.local
+*.pem
+*.key
+*.jks
+*.p8
+*.p12
+
+# Expo & Mobile Build Artifacts
+frontend/.expo/
+frontend/dist/
+frontend/web-build/
+frontend/expo-env.d.ts
+frontend/ios/
+frontend/android/
+
+# Backend Build & Configs
+backend/dist/
+*.tsbuildinfo
+
+# OS System Files
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary Files
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.metro-health-check*
+
+# AI Assistant & Prompt logs (Optional)
+.claude/
+.gemini/
+.agents/
+AGENTS.md
+CLAUDE.md
+
+# Temporary Workspace Backups (if you want to keep them local-only)
+webadmin-2/

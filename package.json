@@ -1,0 +1,8 @@
+{
+  "name": "labourapp1-root",
+  "private": true,
+  "scripts": {
+    "frontend": "npm run start --prefix frontend",
+    "backend": "npm run dev --prefix backend"
+  }
+}
